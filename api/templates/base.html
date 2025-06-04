@@ -178,9 +178,6 @@
         }
         /* Custom Styles for Navbar Dropdown */
         /* Dropdown menu positioning */
-        .nav-item.dropdown {
-            position: relative; /* Ensure the dropdown is positioned relative to the parent item */
-        }
 
         .navbar-nav .dropdown-menu {
             display: none; /* Hide dropdown by default */
@@ -188,12 +185,11 @@
             top: 100%;
             left: 0;
             z-index: 1000;
-            background-color: #343a40; /* Dark background */
+            background-color: #343a40;
             border-radius: 0.25rem;
-            width: 100%; /* Ensure the dropdown takes up the full width of the parent */
         }
 
-        .navbar-nav .dropdown:hover .dropdown-menu {
+        .navbar-nav .nav-item:hover .dropdown-menu {
             display: block; /* Show dropdown on hover */
         }
 
@@ -205,6 +201,31 @@
             border-bottom: none;
         }
 
+        .navbar-nav .nav-item a.active {
+            color: #ffc107 !important;
+            background-color: #0056b3 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav .dropdown-menu {
+                position: static;
+                display: block;
+                width: 100%;
+                background-color: #343a40;
+            }
+
+            .navbar-nav .nav-item {
+                text-align: center;
+            }
+        }
 
     </style>
 </head>
