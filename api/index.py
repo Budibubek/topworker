@@ -129,8 +129,8 @@ class ArtikelAPI:
 
 
 config_artikel = ArtikelAPI()
-config_artikel.sheet_id('1tkdyn5XeN22A-9vn4jPbWm1xHuZsvRQgHBcDk4bFeo8')
-config_artikel.gid('710523043')
+config_artikel.sheet_id('1gHhRyFroysJ_ct6YCY8w57HjCeDdY35ZA-UN-nLzqA4')
+config_artikel.gid('1184431821')
 
 
 @app.route('/')
