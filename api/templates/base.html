@@ -192,50 +192,52 @@
                         <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/websiteitsoftware' %}active{% endif %}" href="/category/website">Website, IT And Software</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/mobilephonescomputing' %}active{% endif %}" href="/category/mobile">Mobile Phones & Computing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/writingcontent' %}active{% endif %}" href="/category/writing">Writing & Content</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/design' %}active{% endif %}" href="/category/design">Design, Media & Architecture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/data' %}active{% endif %}" href="/category/data">Data Entry & Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/AI' %}active{% endif %}" href="/category/AI">Artificial Intelligence</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/engineering' %}active{% endif %}" href="/category/engineering">Engineering & Science</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/product' %}active{% endif %}" href="/category/product">Product Sourcing & Manufacturing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/marketing' %}active{% endif %}" href="/category/marketing">Sales & Marketing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/shipping' %}active{% endif %}" href="/category/shipping">Freight, Shipping & Transportation </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/telecommunications' %}active{% endif %}" href="/category/telecommunications">Telecommunications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/education' %}active{% endif %}" href="/category/education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/business' %}active{% endif %}" href="/category/business">Business, Accounting, Human Resources & Legal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/translation' %}active{% endif %}" href="/category/translation">Translation & Languages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/category/trades' %}active{% endif %}" href="/category/trades">Trades & Services</a>
-                    </li>
+                        <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/category/">Category</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/mobilephonescomputing' %}active{% endif %}" href="/category/mobile">Mobile Phones & Computing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/writingcontent' %}active{% endif %}" href="/category/writing">Writing & Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/design' %}active{% endif %}" href="/category/design">Design, Media & Architecture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/data' %}active{% endif %}" href="/category/data">Data Entry & Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/AI' %}active{% endif %}" href="/category/AI">Artificial Intelligence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/engineering' %}active{% endif %}" href="/category/engineering">Engineering & Science</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/product' %}active{% endif %}" href="/category/product">Product Sourcing & Manufacturing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/marketing' %}active{% endif %}" href="/category/marketing">Sales & Marketing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/shipping' %}active{% endif %}" href="/category/shipping">Freight, Shipping & Transportation </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/telecommunications' %}active{% endif %}" href="/category/telecommunications">Telecommunications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/education' %}active{% endif %}" href="/category/education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/business' %}active{% endif %}" href="/category/business">Business, Accounting, Human Resources & Legal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/translation' %}active{% endif %}" href="/category/translation">Translation & Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/trades' %}active{% endif %}" href="/category/trades">Trades & Services</a>
+                        </li>
+                      </ul>
+                    </li>  
                 </ul>
             </div>
         </div>
@@ -265,6 +267,21 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Tips Populer</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a class="text-decoration-none" href="/category/website">Wordpress Developer</a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-decoration-none" href="/category/website">SEO Expert</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Category</h5>
                         <ul class="list-unstyled">
                             <li class="mb-2">
                                 <a class="text-decoration-none" href="/category/website">Website, IT And Software</a>
@@ -315,30 +332,6 @@
                                 <a class="text-decoration-none" href="/category/trades">Trades & Services</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-
-                <!-- Categories -->
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Kategori</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <a href="/category/politik" class="text-decoration-none">Politik</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="/category/ekonomi" class="text-decoration-none">Ekonomi</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="/category/teknologi" class="text-decoration-none">Teknologi</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="/category/olahraga="class="text-decoration-none"">Olahraga</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="/category/selebriti"class="text-decoration-none"">Selebriti</a>
-                            </li>
-                        </ul>
                         
                     </div>
                 </div>
@@ -351,11 +344,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>Puing Berita</h5>
-                    <p>Puing Berita terpercaya dengan informasi terkini dan akurat.</p>
+                    <h5>Top Worker</h5>
+                    <p>Easy way to get Tips and Trick for Job.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <h5>Ikuti Kami</h5>
+                    <h5>Follow Us</h5>
                     <div class="social-links">
                         <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
@@ -365,7 +358,7 @@
             </div>
             <hr>
             <div class="text-center">
-                <p class="mb-0">&copy; 2024 Puing Berita. All rights reserved.</p>
+                <p class="mb-0">&copy; 2025 Top Worker. All rights reserved.</p>
             </div>
         </div>
     </footer>
