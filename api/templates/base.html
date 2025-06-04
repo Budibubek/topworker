@@ -10,6 +10,10 @@
     <!-- Custom CSS -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Bootstrap -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- JS Bootstrap (termasuk jQuery dan Popper.js) -->\
     <style>
         /* Custom Styles */
         body {
@@ -173,58 +177,34 @@
             margin-bottom: 0.5rem;
         }
         /* Custom Styles for Navbar Dropdown */
-        .navbar-nav .dropdown-menu {
-            display: none; /* Hide dropdown by default */
-            position: absolute;
-            top: 100%;
-            left: 0;
-            z-index: 1000;
-            background-color: #343a40; /* Dark background */
-            border-radius: 0.25rem;
-        }
+.navbar-nav .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #343a40; /* Dark background */
+    border-radius: 0.25rem;
+}
 
-        .navbar-nav .nav-item:hover .dropdown-menu {
-            display: block; /* Show dropdown on hover */
-        }
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
 
-        .navbar-nav .dropdown-menu .nav-item {
-            border-bottom: 1px solid #444;
-        }
+.navbar-nav .dropdown-menu .nav-item {
+    border-bottom: 1px solid #444;
+}
 
-        .navbar-nav .dropdown-menu .nav-item:last-child {
-            border-bottom: none;
-        }
+.navbar-nav .dropdown-menu .nav-item:last-child {
+    border-bottom: none;
+}
 
-        /* Active State */
-        .navbar-nav .nav-item a.active {
-            color: #ffc107 !important;
-            background-color: #0056b3 !important;
-        }
-        /* Navbar Adjustments */
-        .navbar {
-            z-index: 1030; /* Ensure the navbar stays on top */
-        }
+/* Active State */
+.navbar-nav .nav-item a.active {
+    color: #ffc107 !important;
+    background-color: #0056b3 !important;
+}
 
-        .navbar-nav .nav-link {
-            color: #fff;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #ffc107;
-        }
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            .navbar-nav .dropdown-menu {
-                position: static; /* Make dropdown appear below items on small screens */
-                display: block;
-                width: 100%;
-                background-color: #343a40;
-            }
-
-            .navbar-nav .nav-item {
-                text-align: center;
-            }
-        }
     </style>
 </head>
 
@@ -247,6 +227,9 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="">Category</a>
                     <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/category/mobilephonescomputing' %}active{% endif %}"  href="/category/website">Website, IT And Software</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/category/mobilephonescomputing' %}active{% endif %}" href="/category/mobile">Mobile Phones & Computing</a>
                         </li>
@@ -336,9 +319,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Category</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <a class="text-decoration-none" href="/category/website">Website, IT And Software</a>
-                            </li>
+                            
                             <li class="mb-2">
                                 <a class="text-decoration-none" href="/category/website">Website, IT And Software</a>
                             </li>
