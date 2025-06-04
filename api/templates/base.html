@@ -177,33 +177,34 @@
             margin-bottom: 0.5rem;
         }
         /* Custom Styles for Navbar Dropdown */
-.navbar-nav .dropdown-menu {
-    display: none; /* Hide dropdown by default */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    background-color: #343a40; /* Dark background */
-    border-radius: 0.25rem;
-}
+        /* Dropdown menu positioning */
+        .nav-item.dropdown {
+            position: relative; /* Ensure the dropdown is positioned relative to the parent item */
+        }
 
-.navbar-nav .nav-item:hover .dropdown-menu {
-    display: block; /* Show dropdown on hover */
-}
+        .navbar-nav .dropdown-menu {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            background-color: #343a40; /* Dark background */
+            border-radius: 0.25rem;
+            width: 100%; /* Ensure the dropdown takes up the full width of the parent */
+        }
 
-.navbar-nav .dropdown-menu .nav-item {
-    border-bottom: 1px solid #444;
-}
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block; /* Show dropdown on hover */
+        }
 
-.navbar-nav .dropdown-menu .nav-item:last-child {
-    border-bottom: none;
-}
+        .navbar-nav .dropdown-menu .nav-item {
+            border-bottom: 1px solid #444;
+        }
 
-/* Active State */
-.navbar-nav .nav-item a.active {
-    color: #ffc107 !important;
-    background-color: #0056b3 !important;
-}
+        .navbar-nav .dropdown-menu .nav-item:last-child {
+            border-bottom: none;
+        }
+
 
     </style>
 </head>
@@ -224,7 +225,7 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="">Category</a>
                     <ul class="dropdown-menu">
                         <li class="nav-item">
